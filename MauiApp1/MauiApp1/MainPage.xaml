@@ -4,58 +4,79 @@
              x:Class="MauiApp1.MainPage">
 
     <ScrollView Orientation="Vertical">
-        <VerticalStackLayout 
-            Padding="20"
-            Spacing="10">
+        <VerticalStackLayout Padding="20" Spacing="10">
 
-            <Button Text=" HI SHOPPERS! "
-              BackgroundColor="Beige"
-              TextColor="Black"
-                />
 
-            <SearchBar 
-                Placeholder="Search"
-                
-                />
+            <Button Text=" WELCOME! "
+                    BackgroundColor="DimGray"
+                    TextColor="Black" />
 
-            <Button
-              Text="ANTIPOLO"
-              TextColor="Black"
-              FontSize="Body"
-              FontAttributes="None"
-              HeightRequest="200"
-              WidthRequest="500"
-              BackgroundColor="LightBlue"/>
 
-            <Button 
-                Text="AYALA"
-                TextColor="Black"
-                FontSize="Body" 
-                FontAttributes="None"
-                HeightRequest="200"
-                WidthRequest="500"
-                BackgroundColor="LightBlue"/>
+            <SearchBar Placeholder="Search" />
 
-            <Button
-                Text="GALERIA"
-                TextColor="Black"
-                FontSize="Body"
-                FontAttributes="None"
-                HeightRequest="200"
-                WidthRequest="500"
-                BackgroundColor="LightBlue"/>
 
-            <Button
-                Text="CAINTA"
-                TextColor="Black"
-                FontSize="Body"
-                FontAttributes="None"
-                HeightRequest="200"
-                WidthRequest="500"
-                BackgroundColor="LightBlue"/>
+            <Grid ColumnDefinitions="*,*"
+                  RowDefinitions="Auto,Auto"
+                  ColumnSpacing="10"
+                  RowSpacing="10">
 
+                <Frame Grid.Row="0" Grid.Column="0"
+                       BorderColor="Green" CornerRadius="10" HeightRequest="180">
+                    <Grid>
+                        <Label Text="CAPS"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               TextColor="White"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               BackgroundColor="#80000000"/>
+                    </Grid>
+                </Frame>
+
+
+                <Frame Grid.Row="1" Grid.Column="0"
+                       BorderColor="Green" CornerRadius="10" HeightRequest="180">
+                    <Grid>
+                        <Label Text="T-SHIRT"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               TextColor="White"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               BackgroundColor="#80000000"/>
+                    </Grid>
+                </Frame>
+
+
+                <Frame Grid.Row="0" Grid.Column="1"
+                       BorderColor="Green" CornerRadius="10" HeightRequest="180">
+                    <Grid>
+                        <Label Text="PANTS"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               TextColor="White"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               BackgroundColor="#80000000"/>
+                    </Grid>
+                </Frame>
+
+
+                <Frame Grid.Row="1" Grid.Column="1"
+                       BorderColor="Green" CornerRadius="10" HeightRequest="180">
+                    <Grid>
+                        <Label Text="SHOES"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               TextColor="White"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               BackgroundColor="#80000000"/>
+                    </Grid>
+                </Frame>
+
+            </Grid>
 
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>
